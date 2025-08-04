@@ -3,7 +3,8 @@ import Link from "next/link";
 export function Header() {
     return (
         <>
-        <section className="bg-slate-300 flex justify-end gap-6">
+        <div className="max-w-6xl mx-auto ">
+        <section className="bg-slate-300 flex justify-end gap-6 px-6">
             <Link href='/facebook'>facebook</Link>
             <Link href='/instagram'>instagram</Link>
             <Link href='/linkedin'>linkedin</Link>
@@ -20,6 +21,7 @@ export function Header() {
                 </ul>
             </nav>
         </header>
+        </div>
         </>
     )
 }
