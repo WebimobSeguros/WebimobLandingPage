@@ -1,5 +1,9 @@
+// Components
+import { Button } from "@/components/ui/button"
+
 export default function Home() {
-  return (
+  return (<>
     <h1>Webimob Landing Page</h1>
-  )
+    <Button>Botão teste</Button>
+  </>)
 }
