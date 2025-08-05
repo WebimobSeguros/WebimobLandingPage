@@ -2,7 +2,7 @@
 import { Button } from '@/components/ui/button';
 import { ProdutoCard } from './components/Cards/ProdutoCard';
 import { InfoCard } from './components/Cards/InfoCard';
-import { ConecteSeSection } from './components/ConecteSeSection';
+import { ConecteSeSection } from './components/PageSections/ConecteSeSection';
 
 export default function Home() {
   const data = [
