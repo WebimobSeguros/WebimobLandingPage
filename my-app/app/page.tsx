@@ -57,7 +57,7 @@ export default function Home() {
           <div className='max-w-6xl mx-auto px-4'>
             <div className='flex flex-col py-60 gap-4 '>
               <h1 className='font-bold text-4xl max-w-xl'>
-                WebiMob: Tecnologia para Seguros Imobiliários
+                Webimob: Tecnologia para Seguros Imobiliários
               </h1>
               <h3 className='py-4'>
                 Alugue Mais e Melhor! Agilidade e Segurança para suas Locações
@@ -97,7 +97,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className='grid grid-cols-1 sm:grid-cols-3 max-w-5xl mx-auto p-4 gap-3'>
+          <div className='grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto p-4 gap-3'>
             {data.map(item => (
               <ProdutoCard
                 key={item.link}
@@ -121,7 +121,7 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className='grid grid-cols-1 sm:grid-cols-3 max-w-5xl mx-auto  '>
+          <div className='grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto gap-4'>
             {infoCardData.map(item => (
               <InfoCard
                 key={item.title}
@@ -135,7 +135,7 @@ export default function Home() {
 
         <section className='bg-slate-300'>
           <article className='max-w-6xl mx-auto px-4 flex justify-center'>
-            <div className='flex sm:flex-row flex-col gap-6 p-6 my-8'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-6 my-8'>
               <h1 className='bg-white p-8'>Porto Seguro</h1>
               <h1 className='bg-white p-8'>Porto Seguro</h1>
               <h1 className='bg-white p-8'>Porto Seguro</h1>

@@ -9,7 +9,7 @@ type InfoCardProps ={
 export function InfoCard({title, description, image}: InfoCardProps){
     return (
         <>  
-            <div className="flex justify-center my-8 px-4">
+            <div className="flex justify-center px-4">
               <div className="relative border-4 p-6 flex flex-col items-center w-xs bg-white">
                 <Image
                   src={image}
