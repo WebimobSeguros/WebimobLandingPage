@@ -10,7 +10,7 @@ type ProdutoCardProps ={
 
 export function ProdutoCard({title, description, link, image}: ProdutoCardProps){
     return(
-            <div className="flex justify-center my-8 ">
+            <div className="flex justify-center ">
               <div className="relative border-4 p-6 flex flex-col items-center w-xs">
                 <Link href={link}>
                 <Image
