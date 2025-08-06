@@ -1,8 +1,12 @@
-"use client"
+'use client';
 
 import { FacebookIcon, InstagramIcon, LinkedinIcon, Menu } from 'lucide-react';
 import Link from 'next/link';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover';
 import { useState, useEffect } from 'react';
 
 const navigationLinks = [
@@ -11,7 +15,6 @@ const navigationLinks = [
   { href: '/nossas-solucoes', label: 'Nossas Soluções' },
   { href: '/contato', label: 'Contato' },
 ];
-
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,13 +35,13 @@ export function Header() {
       <div className=' bg-slate-300'>
         <section className='flex justify-center sm:justify-end gap-6 px-6 max-w-6xl mx-auto py-4'>
           <Link href='/'>
-            <FacebookIcon />
+            <FacebookIcon size={16}/>
           </Link>
           <Link href='/'>
-            <InstagramIcon />
+            <InstagramIcon size={16}/>
           </Link>
           <Link href='/'>
-            <LinkedinIcon />
+            <LinkedinIcon size={16}/>
           </Link>
         </section>
       </div>
@@ -55,7 +58,7 @@ export function Header() {
               <PopoverContent className='w-screen max-w-none rounded-none my-5'>
                 <nav>
                   <ul className='flex flex-col gap-3'>
-                    {navigationLinks.map((link) => (
+                    {navigationLinks.map(link => (
                       <li key={link.href}>
                         <Link href={link.href} className='block py-2'>
                           {link.label}
@@ -69,7 +72,7 @@ export function Header() {
           </div>
           <nav className='hidden sm:block'>
             <ul className='flex flex-col sm:flex-row gap-2 md:gap-4 items-center'>
-              {navigationLinks.map((link) => (
+              {navigationLinks.map(link => (
                 <li key={link.href}>
                   <Link href={link.href}>{link.label}</Link>
                 </li>

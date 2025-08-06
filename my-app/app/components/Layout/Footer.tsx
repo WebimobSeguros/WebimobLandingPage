@@ -15,12 +15,12 @@ export function Footer() {
               height={128}
               className='bg-slate-500'
             />
-            <p className='max-w-xs text-left'>
+            <p className='max-w-xs text-left text-slate-200'>
               Tecnologia e Consultoria Especializada para Seguros Imobiliários
             </p>
           </div>
 
-          <address className='flex flex-col gap-4 text-left not-italic sm:flex-1'>
+          <address className='flex flex-col gap-4 text-left not-italic sm:flex-1 text-slate-200'>
             <h1 className='text-xl font-bold'>+55 (31) 9 8332-3971</h1>
             <p>imobiliario@webimob.com.br</p>
             <p>Endereço: Av. Bias Fortes 382</p>
@@ -28,7 +28,7 @@ export function Footer() {
             <p>Belo Horizonte/MG</p>
           </address>
 
-          <div className='flex flex-col gap-4 text-left'>
+          <div className='flex flex-col gap-4 text-left text-slate-200'>
             <Link href='/'>Home</Link>
             <Link href='/sobre'>Quem Somos</Link>
             <Link href='/nossas-solucoes'>Nossas Soluções</Link>
@@ -38,12 +38,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className='max-w-6xl mx-auto flex pt-8 justify-between items-center'>
-          <p>Copyright ©2025 Todos os direitos reservados</p>
+        <div className='max-w-6xl mx-auto flex pt-8 justify-between items-center text-slate-200'>
+          <p className='text-sm'>Copyright ©2025 Todos os direitos reservados</p>
           <section className='flex gap-6'>
-            <Link href='/'><FacebookIcon/></Link>
-            <Link href='/'><InstagramIcon/></Link>
-            <Link href='/'><LinkedinIcon/></Link>
+            <Link href='/'><FacebookIcon size={14}/></Link>
+            <Link href='/'><InstagramIcon size={14}/></Link>
+            <Link href='/'><LinkedinIcon size={14}/></Link>
           </section>
         </div>
       </div>
