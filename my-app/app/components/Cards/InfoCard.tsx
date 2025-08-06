@@ -9,8 +9,8 @@ type InfoCardProps ={
 export function InfoCard({title, description, image}: InfoCardProps){
     return (
         <>  
-            <div className="flex justify-center px-4">
-              <div className="relative border-4 p-6 flex flex-col items-center w-xs bg-white">
+            <div className="flex justify-center mb-6 mx-6 md:mx-3">
+              <div className=" border-4 p-6 flex flex-col items-center w-sm bg-white">
                 <Image
                   src={image}
                   alt="Webimob Favicon"

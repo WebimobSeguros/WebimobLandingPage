@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ProdutoCard } from './components/Cards/ProdutoCard';
 import { InfoCard } from './components/Cards/InfoCard';
 import { ConecteSeSection } from './components/PageSections/ConecteSeSection';
+import { InfoSection } from './components/PageSections/InfoSection';
 
 export default function Home() {
   const data = [
@@ -56,10 +57,10 @@ export default function Home() {
         <section className='bg-amber-400'>
           <div className='max-w-6xl mx-auto px-4'>
             <div className='flex flex-col py-60 gap-4 '>
-              <h1 className='font-bold text-4xl max-w-xl'>
+              <h1 className='font-bold text-4xl sm:text-6xl max-w-3xl'>
                 Webimob: Tecnologia para Seguros Imobiliários
               </h1>
-              <h3 className='py-4'>
+              <h3 className='py-4 sm:text-2xl'>
                 Alugue Mais e Melhor! Agilidade e Segurança para suas Locações
               </h3>
               <Button className='w-fit px-6 py-4'>
@@ -70,28 +71,22 @@ export default function Home() {
         </section>
 
         <section className='max-w-6xl mx-auto px-4 flex my-8'>
-          <div className='flex flex-col gap-6 md:ml-20'>
-            <div className='flex items-center'>
-              <span className='block w-10 h-0.5 bg-black mr-4 '></span>
-              <h2 className='text-2xl max-w-xl'>
-                Tecnologia e atendimento humanizado, para você alugar mais e
-                melhor.
-              </h2>
-            </div>
-            <h3 className='text-sm max-w-3xl'>
-              Na Webimob, o uso da tecnologia somado ao atendimento realizado
+          <InfoSection
+            title='Tecnologia e atendimento humanizado, para você alugar mais e
+                melhor.'
+            description='Na Webimob, o uso da tecnologia somado ao atendimento realizado
               por especialistas em seguros imobiliários, aumenta sua
-              competitividade e a segurança nos processos.
-            </h3>
+              competitividade e a segurança nos processos.'
+          >
             <Button className='w-fit px-6'>
               FALE COM NOSSOS ESPECIALISTAS
             </Button>
-          </div>
+          </InfoSection>
         </section>
 
         <section className='bg-slate-100 py-8'>
           <div className='max-w-6xl mx-auto px-4 flex items-center'>
-            <h1 className='text-4xl sm:text-5xl font-bold text-center mb-8'>
+            <h1 className='text-4xl sm:text-5xl font-bold text-center mb-8 mx-6'>
               Soluções Completas para Locação de Imóveis: Agilidade, Segurança e
               Tranquilidade
             </h1>
@@ -115,22 +110,22 @@ export default function Home() {
             <h1 className='text-4xl sm:text-5xl font-bold text-center flex text-white'>
               Webimob: A Tecnologia que Transforma a Sua Locação
             </h1>
-            <h3 className='text-white'>
+            <h3 className='text-white mx-6'>
               Nossa plataforma foi desenvolvida para otimizar o seu tempo e
               aumentar a sua produtividade. Com a Webimob, você:
             </h3>
-          </div>
 
-          <div className='grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto gap-4'>
+          <div className='grid grid-cols-1 md:grid-cols-3 max-w-6xl gap-4 py-10'>
             {infoCardData.map(item => (
               <InfoCard
-                key={item.title}
-                title={item.title}
-                description={item.description}
-                image={item.image}
+              key={item.title}
+              title={item.title}
+              description={item.description}
+              image={item.image}
               />
             ))}
           </div>
+            </div>
         </section>
 
         <section className='bg-slate-300'>

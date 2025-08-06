@@ -1,4 +1,4 @@
-import { Facebook, FacebookIcon, InstagramIcon, Linkedin, LinkedinIcon } from 'lucide-react';
+import { FacebookIcon, InstagramIcon, LinkedinIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
