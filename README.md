@@ -27,3 +27,10 @@ A landing page está hospedada na Vercel e disponível em:
 
 - [Bernardo Cruz Rohlfs](https://github.com/beroh)
 - [Eric Leal](https://github.com/)
+
+---
+
+## Credenciais Formspree
+
+- email: ti@webimob.com.br
+- password: KE3qjnYnS$8nW.q

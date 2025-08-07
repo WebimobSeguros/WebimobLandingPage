@@ -60,7 +60,7 @@ export default function Home() {
               <h1 className='font-bold text-4xl sm:text-6xl max-w-3xl'>
                 Webimob: Tecnologia para Seguros Imobiliários
               </h1>
-              <h3 className='py-4 sm:text-2xl'>
+              <h3 className='py-4 sm:text-2xl '>
                 Alugue Mais e Melhor! Agilidade e Segurança para suas Locações
               </h3>
               <Button className='w-fit px-6 py-4'>
