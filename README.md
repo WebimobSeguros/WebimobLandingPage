@@ -1,6 +1,6 @@
 # 🌐 Webimob — Landing Page
 
-Landing page oficial da [Webimob](https://webimob.com.br), criada com foco em performance, design responsivo e experiência do usuário.
+Landing page oficial da [Webimob](https://webimob.com.br), criada com foco em performance, design responsivo e experiência do usuário!
 
 A aplicação foi desenvolvida com [Next.js](https://nextjs.org/), utilizando [Tailwind CSS](https://tailwindcss.com/) e [Shadcn UI](https://ui.shadcn.com/) para garantir consistência visual e facilidade de manutenção.
 
