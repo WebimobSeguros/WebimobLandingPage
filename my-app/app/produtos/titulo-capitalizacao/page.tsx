@@ -42,7 +42,7 @@ export default function TituloCapitalizacao() {
               Vantagens para Imobiliárias, Locadores e Locatários
             </h1>
 
-            <div className='my-4 mx-8'>
+            <div className='my-4 mx-8' >
               <h1 className='font-bold text-2xl'>Para Imobiliárias</h1>
               <ul className='list-disc pt-2 ml-4 text-left inline-block'>
                 <li>Maior agilidade na aprovação de contratos.</li>
