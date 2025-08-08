@@ -16,6 +16,7 @@ import {
   validation_send_email,
 } from '@/validations/sendEmail';
 import { zodResolver } from '@hookform/resolvers/zod';
+import axios from 'axios';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -30,19 +31,16 @@ export const SendEmailForm = () => {
   async function sendEmail(data: z.infer<typeof validation_send_email>) {
     try {
       setLoading(true);
-      /*  const res = await axios.post('https://formspree.io/f/xzzvkgjb', {
+      const res = await axios.post('https://formspree.io/f/xzzvkgjb', {
         _subject: 'Novo lead landing page Webimob',
         message: data.mensagem,
-      }); */
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-      /* console.log(res.data); */
+      }); 
+      console.log(res.data);
     } catch (error) {
-      /* console.log(error); */
-    } /*finally {
+      console.log(error);
+    }finally {
       setLoading(false);
-    }*/
+    }
   }
 
   return (
