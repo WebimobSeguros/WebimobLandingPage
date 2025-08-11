@@ -1,9 +1,69 @@
 import { InfoSection } from '@/app/components/PageSections/InfoSection';
+import { SobreProdutoSection } from '@/app/components/PageSections/SobreProdutoSection';
 import { TitleSection } from '@/app/components/PageSections/TitleSection';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
 export default function TituloCapitalizacao() {
+
+  const produtoInfo = [
+    {
+      title: 'Para Imobiliárias',
+      topicos: [
+        {
+          index: 'Agilidade',
+          info: 'Maior agilidade na aprovação de contratos.',
+        },
+        {
+          index: 'Garantia',
+          info: 'Garantia de recebimento de aluguéis, reduzindo a inadimplência.',
+        },
+        {
+          index: 'Diferencial',
+          info: 'Diferencial competitivo para atrair mais clientes.',
+        },
+      ],
+    },
+    {
+      title: 'Para Locadores',
+      topicos: [
+        {
+          index: 'GarantiaRecebimento',
+          info: 'Garantia de recebimento dos aluguéis, mesmo em caso de inadimplência.',
+        },
+        {
+          index: 'ProcessoRapido',
+          info: 'Processo de locação mais rápido e seguro.',
+        },
+        {
+          index: 'TranquilidadeLocador',
+          info: 'Tranquilidade e segurança durante todo o contrato.',
+        },
+      ],
+    },
+    {
+      title: 'Para Locatários',
+      topicos: [
+        {
+          index: 'Dispensa',
+          info: 'Dispensa de fiador ou caução.',
+        },
+        {
+          index: 'ProcessoDeLocacao',
+          info: 'Processo de locação simplificado e rápido.',
+        },
+        {
+          index: 'LiberdadeParaEscolher',
+          info: 'Liberdade para escolher o imóvel ideal, sem depender de terceiros.',
+        },
+        {
+          index: 'Tranquilidade',
+          info: 'Tranquilidade durante toda a locação.',
+        },
+      ],
+    }
+  ];
+
   return (
     <main>
       <TitleSection
@@ -24,63 +84,7 @@ export default function TituloCapitalizacao() {
         </div>
       </section>
 
-      <section className='flex relative bg-pink-500'>
-        <div className='absolute hidden lg:block bg-amber-500 top-0 left-0 h-full w-1/4'></div>
-        <div className=' py-8 mx-8 lg:pl-30 flex flex-col lg:flex-row z-20 items-center'>
-          <div className='bg-white mx-8'>
-            <Image
-              src='/favicon.ico'
-              alt='Webimob Favicon'
-              width={450}
-              height={300}
-              className=' '
-            />
-          </div>
-
-          <div className='my-8 lg:my-0' >
-            <h1 className='text-3xl sm:text-5xl font-bold text-left mx-8'>
-              Vantagens para Imobiliárias, Locadores e Locatários
-            </h1>
-
-            <div className='my-4 mx-8' >
-              <h1 className='font-bold text-2xl'>Para Imobiliárias</h1>
-              <ul className='list-disc pt-2 ml-4 text-left inline-block'>
-                <li>Maior agilidade na aprovação de contratos.</li>
-                <li>
-                  Garantia de recebimento de aluguéis, reduzindo a
-                  inadimplência.
-                </li>
-                <li>Diferencial competitivo para atrair mais clientes</li>
-              </ul>
-            </div>
-
-            <div className='my-4 mx-8'>
-              <h1 className='font-bold text-2xl'>Para Locadores</h1>
-              <ul className='list-disc pt-2 ml-4 text-left inline-block'>
-                <li>
-                  Garantia de recebimento dos aluguéis, mesmo em caso de
-                  inadimplência.
-                </li>
-                <li>Processo de locação mais rápido e seguro.</li>
-                <li>Tranquilidade e segurança durante todo o contrato.</li>
-              </ul>
-            </div>
-
-            <div className='my-4 mx-8'>
-              <h1 className='font-bold text-2xl'>Para Locatários</h1>
-              <ul className='list-disc pt-2 ml-4 text-left inline-block'>
-                <li>Dispensa de fiador ou caução.</li>
-                <li>Processo de locação simplificado e rápido.</li>
-                <li>
-                  Liberdade para escolher o imóvel ideal, sem depender de
-                  terceiros.
-                </li>
-                <li>Tranquilidade durante toda a locação.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SobreProdutoSection title='Vantagens para Imobiliárias, Locadores e Locatários' image='/favicon.ico' produtoInfo={produtoInfo}/>
 
       <section className='bg-slate-200'>
         <div className='max-w-6xl mx-auto'>

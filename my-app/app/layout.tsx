@@ -1,6 +1,6 @@
 // Next
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Geist_Mono, Inter } from "next/font/google"
 // CSS
 import "./globals.css"
 // Components
@@ -17,6 +17,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 })
 
+const inter = Inter({
+  subsets: ["latin"],
+})
+
 export const metadata: Metadata = {
   title: "Webimob",
   description: "Corretora de Seguros Imobiliários",
@@ -29,7 +33,7 @@ type Props = {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="pt-br">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         <Header/>
         {children}
         <Footer/>
