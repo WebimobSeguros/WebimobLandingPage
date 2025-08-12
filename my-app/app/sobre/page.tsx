@@ -1,3 +1,4 @@
+import { CloudIcon, FastForwardIcon, StarIcon, UserIcon } from 'lucide-react';
 import { InfoCard } from '../components/Cards/InfoCard';
 import { ConecteSeSection } from '../components/PageSections/ConecteSeSection';
 import { InfoSection } from '../components/PageSections/InfoSection';
@@ -9,25 +10,25 @@ export default function Sobre() {
       title: 'Inovação',
       description:
         'Buscamos constantemente novas tecnologias e soluções para aprimorar nossos serviços e atender às necessidades do mercado.',
-      image: '/favicon.ico',
+      icon: <CloudIcon size={64} strokeWidth={1} color='#72BDA3' />,
     },
     {
       title: 'Agilidade',
       description:
         'Oferecemos soluções rápidas, inovadoras e eficientes, assim você pode focar no que realmente importa: o crescimento do seu negócio.',
-      image: '/favicon.ico',
+      icon: <FastForwardIcon size={64} strokeWidth={1} color='#72BDA3' />,
     },
     {
       title: 'Atendimento Humanizado',
       description:
         'Acreditamos que a tecnologia deve ser aliada ao atendimento personalizado, oferecendo suporte e consultoria especializada para cada cliente.',
-      image: '/favicon.ico',
+      icon: <UserIcon size={64} strokeWidth={1} color='#72BDA3' />,
     },
     {
       title: 'Compromisso',
       description:
         'Estamos comprometidos com o sucesso dos nossos parceiros, oferecendo soluções que geram resultados e superam expectativas.',
-      image: '/favicon.ico',
+      icon: <StarIcon size={64} strokeWidth={1} color='#72BDA3' />,
     },
   ];
 
@@ -54,13 +55,13 @@ export default function Sobre() {
         </div>
       </section>
 
-      <section className='py-8 bg-slate-300'>
+      <section className='py-8 bg-slate-100'>
         <div className='max-w-6xl mx-auto '>
           <div className='flex items-center mx-6'>
-            <span className='block w-10 h-0.5 bg-black mr-4 '></span>
-            <h2 className='text-xl max-w-2xl font-bold'>NOSSOS VALORES</h2>
+            <span className='block w-10 h-0.5 bg-[#72BDA3] mr-4 '></span>
+            <h2 className='text-xl max-w-2xl font-bold text-[#000a2d]'>NOSSOS VALORES</h2>
           </div>
-          <h2 className='text-5xl font-bold my-6 mx-6'>
+          <h2 className='text-5xl font-bold my-6 mx-6 text-[#000a2d]'>
             A Base da Nossa Parceria
           </h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-10 py-10'>
@@ -69,13 +70,13 @@ export default function Sobre() {
                 key={item.title}
                 title={item.title}
                 description={item.description}
-                image={item.image}
+                icon={item.icon}
               />
             ))}
           </div>
         </div>
       </section>
-      <section className='bg-slate-200'>
+      <section>
         <div className='max-w-6xl mx-auto'>
           <InfoSection
             title='Nosso Compromisso: Seu Sucesso é Nosso Objetivo'

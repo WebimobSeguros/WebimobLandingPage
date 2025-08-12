@@ -136,7 +136,7 @@ export const SendEmailForm = () => {
         )}
         />
         <Button className='p-8 text-xl mt-8' type='submit'>
-        {loading ? 'CARREGANDO' : 'ENVIAR MENSAGEM'}
+        {loading ? 'ENVIANDO' : 'ENVIAR MENSAGEM'}
         </Button>
       </fieldset>
     </form>
