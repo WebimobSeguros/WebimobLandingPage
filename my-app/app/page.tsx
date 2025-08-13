@@ -36,13 +36,13 @@ export default function Home() {
     <>
       <main>
         <section
-          className='relative bg-cover bg-center bg-no-repeat '
+          className='relative bg-cover bg-center bg-no-repeat'
           style={{ backgroundImage: 'url(/Images/londres.jpg)' }}
         >
           <div className='absolute inset-0 bg-black/30'></div>
 
           <div className='relative z-10 max-w-6xl mx-auto px-4'>
-            <div className='flex flex-col py-40 sm:py-60 gap-4 '>
+            <div className='flex flex-col py-32 gap-4 '>
               <h1 className='font-bold text-center sm:text-left text-4xl sm:text-6xl max-w-3xl text-white'>
                 Webimob: Tecnologia para Seguros Imobiliários
               </h1>

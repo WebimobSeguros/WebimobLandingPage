@@ -52,9 +52,9 @@ export function Header() {
             <Image
               src='/Images/logo.png'
               alt='Webimob Favicon'
-              width={250}
-              height={100}
-              className='w-[180px] h-[72px] sm:w-[250px] sm:h-[100px]'
+              width={130}
+              height={52}
+              className='w-[130px]'
             />
           </Link>
           <div className='sm:hidden'>
