@@ -29,7 +29,7 @@ export default function RootLayout({ children }: Props) {
         <Header />
         {children}
         <Footer />
-        <Link target='blank' href='https://api.whatsapp.com/send?phone=5531983323971&text=Olá!%20Tudo%20bem%3F%0A%0AA%20Webimob%20despertou%20meu%20interesse!' className='fixed bottom-0 right-0 p-4 w-fit'>
+        <Link target='blank' href='https://api.whatsapp.com/send?phone=5531983323971&text=Olá!%20Tudo%20bem%3F%0A%0AA%20Webimob%20despertou%20meu%20interesse!' className='fixed bottom-0 right-0 p-4 w-fit z-60'>
           <div className='bg-green-400 rounded-4xl p-3'>
           <Image
             src='/Images/whatsapp-logo-1.png'
