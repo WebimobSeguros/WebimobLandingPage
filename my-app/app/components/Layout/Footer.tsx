@@ -28,7 +28,7 @@ export function Footer() {
           <address className='flex flex-col gap-4 text-left not-italic sm:flex-1 text-slate-200'>
             <h1 className='text-xl font-bold'>+55 (31) 9 8332-3971</h1>
             <div className='flex flex-col gap-4 text-sm text-gray-400'>
-              <p>imobiliario@webimob.com.br</p>
+              <p>operacional@webimob.com.br</p>
               <p>Endereço: Av. Bias Fortes 382</p>
               <p>12 andar - Lourdes</p>
               <p>Belo Horizonte/MG</p>
