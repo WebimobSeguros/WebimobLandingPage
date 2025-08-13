@@ -2,107 +2,94 @@ import { InfoSection } from '@/app/components/PageSections/InfoSection';
 import { SobreProdutoSection } from '@/app/components/PageSections/SobreProdutoSection';
 import { TitleSection } from '@/app/components/PageSections/TitleSection';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
+import { CircleUserIcon, HouseIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export default function TituloCapitalizacao() {
-
   const produtoInfo = [
     {
-      title: 'Para Imobiliárias',
-      topicos: [
-        {
-          index: 'Agilidade',
-          info: 'Maior agilidade na aprovação de contratos.',
-        },
-        {
-          index: 'Garantia',
-          info: 'Garantia de recebimento de aluguéis, reduzindo a inadimplência.',
-        },
-        {
-          index: 'Diferencial',
-          info: 'Diferencial competitivo para atrair mais clientes.',
-        },
-      ],
-    },
-    {
-      title: 'Para Locadores',
-      topicos: [
-        {
-          index: 'GarantiaRecebimento',
-          info: 'Garantia de recebimento dos aluguéis, mesmo em caso de inadimplência.',
-        },
-        {
-          index: 'ProcessoRapido',
-          info: 'Processo de locação mais rápido e seguro.',
-        },
-        {
-          index: 'TranquilidadeLocador',
-          info: 'Tranquilidade e segurança durante todo o contrato.',
-        },
-      ],
-    },
-    {
       title: 'Para Locatários',
+      icon: <CircleUserIcon/>,
       topicos: [
         {
-          index: 'Dispensa',
-          info: 'Dispensa de fiador ou caução.',
+          index: 'SemAnalise',
+          info: 'Não exige análise de crédito ou comprovação de renda.',
         },
         {
-          index: 'ProcessoDeLocacao',
-          info: 'Processo de locação simplificado e rápido.',
+          index: 'Resgate100',
+          info: 'Resgate de até 100% do valor ao final do contrato.',
         },
         {
-          index: 'LiberdadeParaEscolher',
-          info: 'Liberdade para escolher o imóvel ideal, sem depender de terceiros.',
+          index: 'ProcessoFacil',
+          info: 'Processo de contratação fácil e rápido.',
         },
         {
-          index: 'Tranquilidade',
-          info: 'Tranquilidade durante toda a locação.',
+          index: 'AlternativaPratica',
+          info: 'Alternativa prática e segura ao fiador ou caução.',
         },
       ],
-    }
+    },
+    {
+      title: 'Para Imobiliárias',
+      icon:<HouseIcon/>,
+      topicos: [
+        {
+          index: 'GarantiaRapida',
+          info:'Garantia rápida e segura para o contrato de locação.'
+        },
+        {
+          index: 'ReducaoDeProcessos',
+          info: 'Redução de processos complexos e burocráticos.',
+        },
+        {
+          index: 'AtracaoClientes',
+          info: 'Atração de mais clientes com uma opção de garantia acessível.',
+        },
+      ],
+    },
+    
   ];
 
   return (
     <main>
       <TitleSection
-        title='Seguro fiança'
-        image='/Images/5.jpg'
-        description='Alugue com Segurança e Liberdade'
+        title='Título de Capitalização'
+        image='/Images/hero3.jpg'
+        description='A Garantia Inteligente para sua Locação'
       />
-      <section className='bg-slate-200'>
+      <section className='bg-slate-100'>
         <div className='max-w-6xl mx-auto'>
           <InfoSection
-            title='Seguro Fiança Locatícia: Sua Garantia na Locação'
-            description='O seguro fiança é uma garantia locatícia que traz segurança na locação de imóveis. Ele substitui a necessidade de fiador ou caução, oferecendo garantia de recebimento dos aluguéis para o locador e liberdade para o locatário escolher o imóvel ideal.'
+            title='Título de Capitalização: Sua Reserva Financeira para Locação'
+            description='Um título de capitalização é uma reserva financeira com valor predefinido entre o inquilino e o proprietário, usada como garantia no processo de locação de um imóvel. Além disso, a contratação do título é fácil e rápida, uma vez que não exige análise de crédito ou comprovação de renda. Por fim, o inquilino pode resgatar até 100% do valor da garantia ao final do contrato.'
           />
           <InfoSection
-            title='Processo Simples e Rápido'
-            description='O locatário contrata o Seguro Fiança Locatícia diretamente com a Webimob, de forma simples e online. A aprovação é rápida e sem burocracia, e a garantia é válida por toda a duração do contrato de locação.'
+            title='Processo Simples e Sem Burocracia'
+            description='O locatário adquire o título, que serve como garantia para o contrato de locação. Ao final do contrato, se não houver inadimplência, o locatário pode resgatar até 100% do valor investido'
           />
         </div>
       </section>
 
-      <SobreProdutoSection title='Vantagens para Imobiliárias, Locadores e Locatários' image='/favicon.ico' produtoInfo={produtoInfo}/>
+      <SobreProdutoSection
+        title='Vantagens para Imobiliárias, Locadores e Locatários'
+        image='/Images/capitalizacao.jpg'
+        produtoInfo={produtoInfo}
+      />
 
-      <section className='bg-slate-200'>
+      <section className='bg-slate-100'>
         <div className='max-w-6xl mx-auto'>
-          <InfoSection
-            title='Alugue Sem Limitações'
-            description='Com o Seguro Fiança Locatícia da Webimob, você elimina a burocracia e a dependência de fiadores ou caução. Tenha a liberdade de escolher o imóvel que mais se adapta às suas necessidades e alugue com tranquilidade.'
-          />
-          <div className='mx-6 sm:mx-20 py-8'>
-            <div className='flex items-center'>
-              <span className='block w-10 h-0.5 bg-black flex-shrink-0'></span>
-              <h2 className='text-3xl max-w-2xl font-bold ml-4'>
-                Contrate Seu Seguro Fiança Locatícia Agora
-              </h2>
+          <InfoSection title='Garanta sua Locação com o Título de Capitalização'>
+            <div className='mt-4'>
+              <Link href='/contato' className='w-fit'>
+                <Button className='w-fit px-6 cursor-pointer py-4 sm:p-8 sm:text-lg relative overflow-hidden group transition-all duration-300'>
+                  <span className='absolute inset-0 bg-[#72BDA3] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out'></span>
+                  <span className='relative z-10'>
+                    FALE COM UM ESPECIALISTA
+                  </span>
+                </Button>
+              </Link>
             </div>
-            <Button className='w-fit p-8 text-md sm:text-xl my-8'>
-              FALE COM UM ESPECIALISTAS
-            </Button>
-          </div>
+          </InfoSection>
         </div>
       </section>
     </main>

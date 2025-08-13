@@ -34,7 +34,7 @@ export default function Sobre() {
 
   return (
     <main>
-      <TitleSection title='Quem Somos' image='/Images/5.jpg' />
+      <TitleSection title='Sobre Nós' image='/Images/5.jpg' />
       <section className='py-8'>
         <div className='max-w-6xl mx-auto'>
           <h1 className='mx-6 text-3xl  text-center text-slate-700'>

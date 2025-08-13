@@ -2,13 +2,14 @@ import { InfoSection } from '@/app/components/PageSections/InfoSection';
 import { SobreProdutoSection } from '@/app/components/PageSections/SobreProdutoSection';
 import { TitleSection } from '@/app/components/PageSections/TitleSection';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
-import { title } from 'process';
+import { HouseIcon, SquarePlusIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export default function SeguroIncendio() {
   const produtoInfo = [
     {
       title: 'Coberturas Principais',
+      icon: <SquarePlusIcon />,
       topicos: [
         {
           index: 'Incendios',
@@ -25,32 +26,33 @@ export default function SeguroIncendio() {
       ],
     },
     {
-    title: 'Benefícios para Imobiliárias e Locatários',
-    topicos: [
-      {
-        index: 'Garantia',
-        info: 'Garantia de segurança para o imóvel.'
-      },
-      {
-        index: 'FacilidadeNaResolução',
-        info: 'Facilidade na resolução de incidentes.'
-      },
-      {
-        index: 'ValorizaçãoDoServiço',
-        info: 'Valorização do serviço imobiliário.'
-      }
-    ]
-    }
+      title: 'Benefícios para Imobiliárias e Locatários',
+      icon: <HouseIcon />,
+      topicos: [
+        {
+          index: 'Garantia',
+          info: 'Garantia de segurança para o imóvel.',
+        },
+        {
+          index: 'FacilidadeNaResolução',
+          info: 'Facilidade na resolução de incidentes.',
+        },
+        {
+          index: 'ValorizaçãoDoServiço',
+          info: 'Valorização do serviço imobiliário.',
+        },
+      ],
+    },
   ];
 
   return (
     <main>
       <TitleSection
         title='Seguro Incêndio'
-        image='/Images/5.jpg'
+        image='/Images/hero2.jpg'
         description='Proteção Completa para sua Locação'
       />
-      <section className='bg-slate-200'>
+      <section className='bg-slate-100'>
         <div className='max-w-6xl mx-auto'>
           <InfoSection
             title='Seguro Incêndio'
@@ -63,21 +65,32 @@ export default function SeguroIncendio() {
         </div>
       </section>
 
-      <SobreProdutoSection title='Coberturas e Benefícios do Seguro Incêndio' image='/favicon.ico' produtoInfo={produtoInfo}/>
+      <SobreProdutoSection
+        title='Coberturas e Benefícios do Seguro Incêndio'
+        image='/Images/seguro-incendio.jpg'
+        produtoInfo={produtoInfo}
+      />
 
-      <section className='bg-slate-200'>
+      <section className='bg-slate-100'>
         <div className='max-w-6xl mx-auto'>
           <InfoSection
             title='Exemplo Prático'
             description='Após um incidente elétrico em um apartamento, o Seguro Incêndio garantiu o reparo completo, preservando a segurança do imóvel e a confiança do locatário.'
-          />
-          <div className='mx-6 sm:mx-20'>
-            <Button className='sm:p-8 p-3 text-xs sm:text-xl mb-8'>
-              Proteja seu imóvel com o seguro incêndio
-            </Button>
-          </div>
+          >
+            <div className='mt-4'>
+              <Link href='/contato' className='w-fit'>
+                <Button className='w-fit px-6 cursor-pointer py-4 sm:p-8 sm:text-lg relative overflow-hidden group transition-all duration-300'>
+                  <span className='absolute inset-0 bg-[#72BDA3] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out'></span>
+                  <span className='relative z-10'>
+                    FALE COM UM ESPECIALISTA
+                  </span>
+                </Button>
+              </Link>
+            </div>
+          </InfoSection>
         </div>
       </section>
     </main>
   );
 }
+/* Proteja seu imóvel com o seguro incêndio */

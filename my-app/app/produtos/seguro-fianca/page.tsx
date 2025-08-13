@@ -2,12 +2,14 @@ import { InfoSection } from '@/app/components/PageSections/InfoSection';
 import { SobreProdutoSection } from '@/app/components/PageSections/SobreProdutoSection';
 import { TitleSection } from '@/app/components/PageSections/TitleSection';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
+import { CircleUserIcon, HouseIcon, UsersIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export default function SeguroFianca() {
   const produtoInfo = [
     {
       title: 'Para Imobiliárias',
+      icon: <HouseIcon />,
       topicos: [
         {
           index: 'Agilidade',
@@ -24,7 +26,8 @@ export default function SeguroFianca() {
       ],
     },
     {
-      title: 'Para Locadores',
+      title: 'Para Locadoras',
+      icon: <UsersIcon />,
       topicos: [
         {
           index: 'GarantiaRecebimento',
@@ -42,6 +45,7 @@ export default function SeguroFianca() {
     },
     {
       title: 'Para Locatários',
+      icon: <CircleUserIcon />,
       topicos: [
         {
           index: 'Dispensa',
@@ -67,10 +71,10 @@ export default function SeguroFianca() {
     <main>
       <TitleSection
         title='Seguro fiança'
-        image='/Images/5.jpg'
+        image='/Images/hero2.jpg'
         description='Alugue com Segurança e Liberdade'
       />
-      <section className='bg-slate-200'>
+      <section className='bg-slate-100'>
         <div className='max-w-6xl mx-auto'>
           <InfoSection
             title='Seguro Fiança Locatícia: Sua Garantia na Locação'
@@ -83,25 +87,30 @@ export default function SeguroFianca() {
         </div>
       </section>
 
-      <SobreProdutoSection title='Vantagens para Imobiliárias, Locadores e Locatários' image='/favicon.ico' produtoInfo={produtoInfo}/>
+      <SobreProdutoSection
+        title='Vantagens para Imobiliárias, Locadores e Locatários'
+        image='/Images/seguro-fianca.jpg'
+        produtoInfo={produtoInfo}
+      />
 
-      <section className='bg-slate-200'>
+      <section className='bg-slate-100'>
         <div className='max-w-6xl mx-auto'>
           <InfoSection
             title='Alugue Sem Limitações'
             description='Com o Seguro Fiança Locatícia da Webimob, você elimina a burocracia e a dependência de fiadores ou caução. Tenha a liberdade de escolher o imóvel que mais se adapta às suas necessidades e alugue com tranquilidade.'
           />
-          <div className='mx-6 sm:mx-20 py-8'>
-            <div className='flex items-center'>
-              <span className='block w-10 h-0.5 bg-black flex-shrink-0'></span>
-              <h2 className='text-3xl max-w-2xl font-bold ml-4'>
-                Contrate Seu Seguro Fiança Locatícia Agora
-              </h2>
+          <InfoSection title='Contrate Seu Seguro Fiança Locatícia Agora'>
+            <div className='mt-4'>
+              <Link href='/contato' className='w-fit'>
+                <Button className='w-fit px-6 cursor-pointer py-4 sm:p-8 sm:text-lg relative overflow-hidden group transition-all duration-300'>
+                  <span className='absolute inset-0 bg-[#72BDA3] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out'></span>
+                  <span className='relative z-10'>
+                    FALE COM UM ESPECIALISTA
+                  </span>
+                </Button>
+              </Link>
             </div>
-            <Button className='w-fit p-8 text-md sm:text-xl my-8'>
-              FALE COM UM ESPECIALISTAS
-            </Button>
-          </div>
+          </InfoSection>
         </div>
       </section>
     </main>

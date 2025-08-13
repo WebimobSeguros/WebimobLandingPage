@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Contato() {
   return (
     <main>
-      <TitleSection title='Contato' image='/Images/5.jpg' />
+      <TitleSection title='Contato' image='/Images/contato.jpg' />
 
       <section className='py-8'>
         <div className='max-w-6xl mx-auto'>
@@ -15,7 +15,7 @@ export default function Contato() {
             title='Entre em Contato com a Webimob'
             description='Estamos prontos para ajudar você a transformar sua imobiliária com soluções seguras e ágeis.'
           />
-          <h1 className='mx-6 text-2xl sm:text-2xl  text-center text-slate-700'>
+          <h1 className='mx-6 text-2xl sm:text-2xl  text-center sm:text-left text-slate-700'>
             Seja para esclarecer dúvidas, solicitar uma parceria ou obter mais
             informações sobre nossos serviços, entre em contato conosco. Nossa
             equipe está à disposição para atender você.
