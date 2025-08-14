@@ -5,6 +5,10 @@ import { Button } from '@/components/ui/button';
 import { HouseIcon, SquarePlusIcon } from 'lucide-react';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Seguro Incêndio', 
+};
+
 export default function SeguroIncendio() {
   const produtoInfo = [
     {
@@ -79,7 +83,7 @@ export default function SeguroIncendio() {
           >
             <div className='mt-4'>
               <Link href='/contato' className='w-fit'>
-                <Button className='w-fit px-6 cursor-pointer py-4 sm:p-8 sm:text-lg relative overflow-hidden group transition-all duration-300'>
+                <Button aria-label='Ir para a página de contato da Webimob' className='w-fit px-6 cursor-pointer py-4 sm:p-8 sm:text-lg relative overflow-hidden group transition-all duration-300'>
                   <span className='absolute inset-0 bg-[#72BDA3] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out'></span>
                   <span className='relative z-10'>
                     FALE COM UM ESPECIALISTA

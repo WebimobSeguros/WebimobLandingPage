@@ -34,18 +34,18 @@ export const SendEmailForm = () => {
       setLoading(true);
       const res = await axios.post('https://formspree.io/f/xzzvkgjb', {
         _subject: 'Novo lead landing page Webimob',
-        message: 
-        `\nemail: ${data.email}
+        message: `\nemail: ${data.email}
         \nNome: ${data.nomeCompleto} 
         \nImobiliaria: ${data.nomeImobiliaria} 
         \nTelefone: ${data.telefone}
-        \nMensagem: ${data.mensagem} `
+        \nMensagem: ${data.mensagem} `,
       });
       console.log(res.data);
     } catch (error) {
       console.log(error);
     } finally {
       setLoading(false);
+      form.reset();
     }
   }
 
@@ -53,7 +53,7 @@ export const SendEmailForm = () => {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(sendEmail)} className='mx-4'>
         <fieldset disabled={loading}>
-          <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 my-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 my-4 mx-4 sm:mx-0'>
             <FormField
               control={form.control}
               name='nomeCompleto'
@@ -128,7 +128,7 @@ export const SendEmailForm = () => {
             control={form.control}
             name='mensagem'
             render={({ field }) => (
-              <FormItem>
+              <FormItem className='mx-4 sm:mx-0'>
                 <FormLabel>Mensagem</FormLabel>
                 <FormControl>
                   <Textarea
@@ -141,9 +141,12 @@ export const SendEmailForm = () => {
               </FormItem>
             )}
           />
-          <Button className='p-8 text-xl mt-8' type='submit'>
-            {loading ? 'ENVIANDO' : 'ENVIAR MENSAGEM'}
-          </Button>
+
+          <div className='flex justify-center sm:justify-start sm:mx-0'>
+            <Button className='p-8 text-lg sm:text-xl mt-8' type='submit'>
+              {loading ? 'ENVIANDO' : 'ENVIAR MENSAGEM'}
+            </Button>
+          </div>
         </fieldset>
       </form>
     </Form>

@@ -4,6 +4,10 @@ import { ConecteSeSection } from '../components/PageSections/ConecteSeSection';
 import { InfoSection } from '../components/PageSections/InfoSection';
 import { TitleSection } from '../components/PageSections/TitleSection';
 
+export const metadata = {
+  title: 'Sobre Nós', 
+};
+
 export default function Sobre() {
   const infoCardData = [
     {
@@ -37,12 +41,12 @@ export default function Sobre() {
       <TitleSection title='Sobre Nós' image='/Images/5.jpg' />
       <section className='py-8'>
         <div className='max-w-6xl mx-auto'>
-          <h1 className='mx-6 text-3xl  text-center text-slate-700'>
+          <h2 className='mx-6 text-3xl  text-center text-slate-700'>
             Somos uma parceira confiável que entende as necessidades das
             imobiliárias. Trabalhamos lado a lado com as imobiliárias para
             oferecer soluções que tragam tranquilidade tanto para os negócios
             quanto para os clientes.
-          </h1>
+          </h2>
 
           <InfoSection
             title='Nossa Missão: Simplificar e Proteger Seus Negócios'
@@ -59,11 +63,13 @@ export default function Sobre() {
         <div className='max-w-6xl mx-auto '>
           <div className='flex items-center mx-6'>
             <span className='block w-10 h-0.5 bg-[#72BDA3] mr-4 '></span>
-            <h2 className='text-xl max-w-2xl font-bold text-[#000a2d]'>NOSSOS VALORES</h2>
+            <h2 className='text-xl max-w-2xl font-bold text-[#000a2d]'>
+              NOSSOS VALORES
+            </h2>
           </div>
-          <h2 className='text-5xl font-bold my-6 mx-6 text-[#000a2d]'>
+          <h3 className='text-5xl font-bold my-6 mx-6 text-[#000a2d]'>
             A Base da Nossa Parceria
-          </h2>
+          </h3>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-10 py-10'>
             {infoCardData.map(item => (
               <InfoCard

@@ -29,7 +29,7 @@ export function SobreProdutoSection({
         <div className='bg-white mx-8 border-4 rounded-md'>
           <Image
             src={image}
-            alt='Webimob Favicon'
+            alt={title}
             width={450}
             height={300}
             className='w-full h-full rounded-sm'
@@ -37,13 +37,13 @@ export function SobreProdutoSection({
         </div>
 
         <div className='my-8 lg:my-0 text-white'>
-          <h1 className='text-2xl sm:text-3xl md:text-left font-bold text-center mx-8'>
+          <h2 className='text-2xl sm:text-3xl md:text-left font-bold text-center mx-8'>
             {title}
-          </h1>
+          </h2>
 
           {produtoInfo.map(item => (
             <div key={item.title} className='my-4 mx-8'>
-              <h1 className='font-bold text-xl md:text-2xl flex items-center gap-2'>{item.icon}{item.title}</h1>
+              <h3 className='font-bold text-xl md:text-2xl flex items-center gap-2'>{item.icon}{item.title}</h3>
               <ul className='list-disc pt-2 ml-6 text-left inline-block'>
                 {item.topicos.map(topico => (
                   <li key={topico.index}>{topico.info}</li>

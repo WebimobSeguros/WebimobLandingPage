@@ -1,5 +1,3 @@
-
-
 type TitleSectionProps = {
   title: string;
   description?: string;
@@ -23,9 +21,9 @@ export function TitleSection({ title, description, image }: TitleSectionProps) {
               {title}
             </h1>
             {description && (
-              <h2 className='text-xl sm:text-2xl text-center mt-4'>
+              <p className='text-xl sm:text-2xl text-center mt-4'>
                 {description}
-              </h2>
+              </p>
             )}
           </div>
         </div>

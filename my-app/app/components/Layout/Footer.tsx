@@ -1,18 +1,18 @@
-import { FacebookIcon, InstagramIcon, LinkedinIcon } from 'lucide-react';
+import { InstagramIcon, LinkedinIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export function Footer() {
-
-  const linkClass = 'hover:text-white transition ease-in-out duration-300 hover:translate-x-1';
+  const linkClass =
+    'hover:text-white transition ease-in-out duration-300 hover:translate-x-1';
 
   return (
     <footer
-      className='relative bg-cover bg-center bg-no-repeat py-10'
+      className='relative bg-cover bg-center bg-no-repeat py-6'
       style={{ backgroundImage: 'url(/Images/footer_bg.jpg)' }}
     >
-      <div className='max-w-6xl mx-auto px-4'>
-        <div className='flex flex-col sm:flex-row gap-8 sm:gap-8 px-4 '>
+      <div className='max-w-6xl mx-auto px-4 '>
+        <section className='flex flex-col sm:flex-row gap-8 sm:gap-8 px-4 pt-4'>
           <div className='flex flex-col gap-4 sm:flex-1 items-center sm:items-start'>
             <Image
               src='/Images/logo2_footer.png'
@@ -25,43 +25,78 @@ export function Footer() {
             </p>
           </div>
 
-          <address className='flex flex-col gap-4 text-left not-italic sm:flex-1 text-slate-200 items-center sm:items-start'>
-            <h1 className='text-xl font-bold'>+55 (31) 9 8332-3971</h1>
-            <div className='flex flex-col gap-4 text-sm text-gray-400 items-center sm:items-start'>
-              <p>operacional@webimob.com.br</p>
-              <p>Endereço: Av. Bias Fortes 382</p>
-              <p>12 andar - Lourdes</p>
-              <p>Belo Horizonte/MG</p>
-            </div>
+          <address className='not-italic sm:flex-1'>
+            <ul className='space-y-4 text-sm text-gray-400 items-center sm:items-start list-none text-center sm:text-left'>
+              <li className='text-xl font-bold text-white'>
+                +55 (31) 9 8332-3971
+              </li>
+              <li>operacional@webimob.com.br</li>
+              <li>Endereço: Av. Bias Fortes 382</li>
+              <li>12 andar - Lourdes</li>
+              <li>Belo Horizonte/MG</li>
+            </ul>
           </address>
 
-          <div className='flex flex-col gap-4 text-left text-gray-400  items-center sm:items-start'>
-            <Link className={linkClass} href='/'>Home</Link>
-            <Link  className={linkClass} href='/sobre'>Sobre Nós</Link>
-            <Link  className={linkClass} href='/nossas-solucoes'>Nossas Soluções</Link>
-            <Link  className={linkClass} href='/'>Blog</Link>
-            <Link  className={linkClass} href='/contato'>Contato</Link>
-            <Link  className={linkClass} href='/'>Política de Privacidade</Link>
-          </div>
-        </div>
+          <ul className='list-none flex flex-col gap-4 text-center sm:text-left text-gray-400'>
+            <li className={linkClass}>
+              <Link href='/' title='Pagina inicial da Webimob'>
+                Home
+              </Link>
+            </li>
+            <li className={linkClass}>
+              <Link href='/sobre' title='Saiba mais sobre a Webimob'>
+                Sobre Nós
+              </Link>
+            </li>
+            <li className={linkClass}>
+              <Link
+                href='/nossas-solucoes'
+                title='Explore nossos produtos e serviços'
+              >
+                Nossas Soluções
+              </Link>
+            </li>
+            <li className={linkClass}>
+              <Link href='/contato' title='Entre em contato conosco'>
+                Contato
+              </Link>
+            </li>
+            <li className={linkClass}>
+              <Link href='/' title='Nossa política de privacidade'>
+                Política de Privacidade
+              </Link>
+            </li>
+          </ul>
+        </section>
 
-        <div className='w-full h-px bg-slate-700 my-6' />
-        <div className='max-w-6xl mx-auto flex justify-between items-center text-slate-200'>
-          <p className='text-sm'>
+        <hr className='w-full h-px bg-slate-700 my-6 border-0' />
+        <section className='max-w-6xl mx-auto flex justify-between items-center text-slate-200'>
+          <small className='text-sm'>
             Copyright ©2025 Todos os direitos reservados
-          </p>
-          <section className='flex gap-6'>
-            <Link href='/'>
-              <FacebookIcon size={14} />
+          </small>
+          <div className='flex gap-6'>
+            <Link
+              href='https://www.instagram.com/webimob_seguros/'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Siga-nos no Instagram'
+              title='Instagram da Webimob'
+              className='hover:scale-110 transition duration-150'
+            >
+              <InstagramIcon size={16} />
             </Link>
-            <Link href='/'>
-              <InstagramIcon size={14} />
+            <Link
+              href='https://www.linkedin.com/company/webimob-seguros-imobili%C3%A1rios/'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Conecte-se conosco no LinkedIn'
+              title='LinkedIn da Webimob'
+              className='hover:scale-110 transition duration-150'
+            >
+              <LinkedinIcon size={16} />
             </Link>
-            <Link href='/'>
-              <LinkedinIcon size={14} />
-            </Link>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </footer>
   );

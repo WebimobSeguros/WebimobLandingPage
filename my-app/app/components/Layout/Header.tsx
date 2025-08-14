@@ -1,6 +1,6 @@
 'use client';
 
-import { FacebookIcon, InstagramIcon, LinkedinIcon, Menu } from 'lucide-react';
+import { InstagramIcon, LinkedinIcon, Menu } from 'lucide-react';
 import Link from 'next/link';
 import {
   Popover,
@@ -35,20 +35,36 @@ export function Header() {
     <>
       <section className=' bg-[#0d2d3e]'>
         <div className='flex justify-center sm:justify-end gap-6 px-6 max-w-6xl mx-auto py-4'>
-          <Link href='/'>
-            <FacebookIcon size={16} color='white' fill='white' />
-          </Link>
-          <Link href='/'>
+          <Link
+            href='https://www.instagram.com/webimob_seguros/'
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='Siga-nos no Instagram'
+            title='Instagram da Webimob'
+            className='hover:scale-110 transition duration-150'
+          >
             <InstagramIcon size={16} color='white' />
           </Link>
-          <Link href='/'>
-            <LinkedinIcon size={16} color='white' fill='white' />
+          <Link
+            href='https://www.linkedin.com/company/webimob-seguros-imobili%C3%A1rios/'
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='Conecte-se conosco no LinkedIn'
+            title='LinkedIn da Webimob'
+            className='hover:scale-110 transition duration-150'
+          >
+            <LinkedinIcon size={16} color='white' />
           </Link>
         </div>
       </section>
       <header className=' sticky top-0 px-4 z-50 bg-white border-b-4 py-4'>
         <div className='flex flex-row gap-4 md:gap-0 justify-between items-center max-w-6xl mx-auto '>
-          <Link href='/' className='font-bold text-lg md:text-xl '>
+          <Link
+            href='/'
+            className='font-bold text-lg md:text-xl '
+            title='Ir para a página inicial'
+            aria-label='Página inicial da Webimob'
+          >
             <Image
               src='/Images/logo.png'
               alt='Webimob Favicon'
