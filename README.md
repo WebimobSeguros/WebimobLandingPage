@@ -1,4 +1,4 @@
-# 🌐 Webimob — Landing Page
+# 🌐 Webimob Landing Page
 
 Landing page oficial da [Webimob](https://webimob.com.br), criada com foco em performance, design responsivo e experiência do usuário!
 
