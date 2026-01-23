@@ -57,8 +57,7 @@ export default function Contato() {
                     <div className='text-muted-foreground'>
                       <ul>
                         <li className='underline'>+55 31 99964-2840</li>
-                        <li>Seg à Sex - 08h às 18h</li>
-                        <li>Sábados: 9h às 13h</li>
+                        <li>Seg à Sex - 08:30h às 17:30h</li>
                       </ul>
                     </div>
                   </li>
@@ -67,7 +66,7 @@ export default function Contato() {
                       E-mail
                     </h4>
                     <p className='text-muted-foreground underline'>
-                      contato@webimob.com
+                      operacional@webimob.com.br
                     </p>
                   </li>
                   <li>

@@ -18,6 +18,6 @@ export const produtosData = [
       link: '/produtos/titulo-capitalizacao',
       image: '/Images/3.jpg',
       description:
-        'Excelente opção para garantia dos contratos de locação, e dispensa análise do inquilino. Prático e sem burocracia, permite ao locatário resgatar até 100% do valor determiando ao fim do contrato, caso não seja utilizado. *Consulte condições.',
+        'Excelente opção para garantia dos contratos de locação, dispensa análise de crédito. Prático e sem burocracia, permite ao locatário resgatar até 100% do valor determinado ao fim do contrato, caso não seja utilizado. *Consulte condições.',
     },
   ];

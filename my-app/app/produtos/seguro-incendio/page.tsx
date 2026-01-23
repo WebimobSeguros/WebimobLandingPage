@@ -6,7 +6,7 @@ import { HouseIcon, SquarePlusIcon } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Seguro Incêndio', 
+  title: 'Seguro Incêndio',
 };
 
 export default function SeguroIncendio() {
@@ -20,8 +20,8 @@ export default function SeguroIncendio() {
           info: 'Incêndios e explosões.',
         },
         {
-          index: 'DanosEletricos',
-          info: 'Danos elétricos.',
+          index: 'PerdaPagamentoAluguel',
+          info: 'Perda ou pagamento de aluguel',
         },
         {
           index: 'AssistenciaEmergencial',
@@ -36,10 +36,6 @@ export default function SeguroIncendio() {
         {
           index: 'Garantia',
           info: 'Garantia de segurança para o imóvel.',
-        },
-        {
-          index: 'FacilidadeNaResolução',
-          info: 'Facilidade na resolução de incidentes.',
         },
         {
           index: 'ValorizaçãoDoServiço',
@@ -60,11 +56,7 @@ export default function SeguroIncendio() {
         <div className='max-w-6xl mx-auto'>
           <InfoSection
             title='Seguro Incêndio'
-            description='A cobertura contra incêndio é obrigatório para um contrato de aluguel. Portanto, o seguro incêndio é uma proteção essencial que, além de proteger o imóvel de danos causados por incêndio, raio ou explosão, também oferece coberturas que amparam danos elétricos, quebra de vidros e muito mais! Por último, o seguro incêndio oferece assistência técnica 24h para uma variedade de serviços.'
-          />
-          <InfoSection
-            title='Como Funciona'
-            description='O seguro cobre reparos e indenizações em casos de incêndios e outros incidentes como raio ou explosão, também oferece coberturas que amparam danos elétricos, quebra de vidros e muito mais, garantindo segurança e agilidade na resolução de problemas.'
+            description='A cobertura contra incêndio é obrigatório para um contrato de aluguel. Portanto, o seguro incêndio é uma proteção essencial que, além de proteger o imóvel de danos causados por ncendio, queda de raio e explosao, também oferece coberturas para os bens do inquilino. Por último, o seguro incendio ainda dispõe de assistência 24h para uma variedade de serviços.'
           />
         </div>
       </section>
@@ -78,8 +70,7 @@ export default function SeguroIncendio() {
       <section className='bg-slate-100'>
         <div className='max-w-6xl mx-auto'>
           <InfoSection
-            title='Exemplo Prático'
-            description='Após um incidente elétrico em um apartamento, o Seguro Incêndio garantiu o reparo completo, preservando a segurança do imóvel e a confiança do locatário.'
+            title='Garanta a Segurança do Seu Imóvel com o Seguro Incêndio'
           >
             <div className='mt-4'>
               <Link href='/contato' className='w-fit'>
@@ -94,7 +85,6 @@ export default function SeguroIncendio() {
           </InfoSection>
         </div>
       </section>
-    </main>
+    </main >
   );
 }
-/* Proteja seu imóvel com o seguro incêndio */

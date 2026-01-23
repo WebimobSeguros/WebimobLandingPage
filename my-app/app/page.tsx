@@ -91,8 +91,7 @@ export default function Home() {
       <section className='bg-slate-100 py-8'>
         <div className='max-w-6xl mx-auto px-4 flex items-center'>
           <h2 className='text-4xl sm:text-5xl font-bold text-center mb-8 mx-6 text-[#1E3A5F]'>
-            Soluções Completas para Locação de Imóveis: Agilidade, Segurança e
-            Tranquilidade
+            Agilidade, Segurança e Tranquilidade
           </h2>
         </div>
 

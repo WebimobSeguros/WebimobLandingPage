@@ -72,7 +72,7 @@ export function Footer() {
         <hr className='w-full h-px bg-slate-700 my-6 border-0' />
         <section className='max-w-6xl mx-auto flex justify-between items-center text-slate-200'>
           <small className='text-sm'>
-            Copyright ©2025 Todos os direitos reservados
+            Copyright ©2026 Todos os direitos reservados
           </small>
           <div className='flex gap-6'>
             <Link
