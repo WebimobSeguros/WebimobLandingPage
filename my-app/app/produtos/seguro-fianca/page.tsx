@@ -87,7 +87,7 @@ export default function SeguroFianca() {
           />
           <InfoSection
             title='Processo Simples e Rápido'
-            description='O locatário contrata o Seguro Fiança Locatícia diretamente com a Webimob, de forma simples e online. A análise é rápida e sem burocracia e a garantia é válida por toda a vigência do contrato de locação.'
+            description='A análise é rápida e sem burocracia e a garantia é válida por toda a vigência do contrato de locação.'
           />
         </div>
       </section>
