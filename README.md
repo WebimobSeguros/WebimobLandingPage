@@ -6,7 +6,7 @@ A aplicação foi desenvolvida com [Next.js](https://nextjs.org/), utilizando [T
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas!
 
 - **Next.js** — Framework React com renderização híbrida (SSR/SSG)
 - **Tailwind CSS** — Utilitário de CSS moderno e altamente customizável
