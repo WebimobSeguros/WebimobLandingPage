@@ -33,6 +33,7 @@ export function Header() {
 
   return (
     <>
+      {/*
       <section className=' bg-[#0d2d3e]'>
         <div className='flex justify-center sm:justify-end gap-6 px-6 max-w-6xl mx-auto py-4'>
           <Link
@@ -57,6 +58,7 @@ export function Header() {
           </Link>
         </div>
       </section>
+      */}
       <header className=' sticky top-0 px-4 z-50 bg-white border-b-4 py-4'>
         <div className='flex flex-row gap-4 md:gap-0 justify-between items-center max-w-6xl mx-auto '>
           <Link
