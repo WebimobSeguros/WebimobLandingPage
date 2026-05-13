@@ -74,6 +74,7 @@ export function Footer() {
           <small className='text-sm'>
             Copyright ©2026 Todos os direitos reservados
           </small>
+          {/*
           <div className='flex gap-6'>
             <Link
               href='https://www.instagram.com/webimob_seguros/'
@@ -96,6 +97,7 @@ export function Footer() {
               <LinkedinIcon size={16} />
             </Link>
           </div>
+          */}
         </section>
       </div>
     </footer>
