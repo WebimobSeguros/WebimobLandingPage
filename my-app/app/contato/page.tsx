@@ -69,6 +69,7 @@ export default function Contato() {
                       operacional@webimob.com.br
                     </p>
                   </li>
+                  {/*
                   <li>
                     <h4 className='font-medium sm:text-md lg:text-lg'>
                       Conecte-se Conosco
@@ -98,6 +99,7 @@ export default function Contato() {
                       </li>
                     </ul>
                   </li>
+                  */}
                 </ul>
               </address>
             </div>
